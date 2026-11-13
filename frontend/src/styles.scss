@@ -1,0 +1,49 @@
+/* styles.scss */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  color: #212121;
+}
+
+/* Toast notifications */
+.toast-success .mat-mdc-snack-bar-container {
+  --mdc-snackbar-container-color: #2e7d32;
+  --mat-snack-bar-button-color: white;
+  border-radius: 8px;
+}
+.toast-error .mat-mdc-snack-bar-container {
+  --mdc-snackbar-container-color: #c62828;
+  --mat-snack-bar-button-color: white;
+  border-radius: 8px;
+}
+.toast-info .mat-mdc-snack-bar-container {
+  --mdc-snackbar-container-color: #1565c0;
+  --mat-snack-bar-button-color: white;
+  border-radius: 8px;
+}
+.toast-warning .mat-mdc-snack-bar-container {
+  --mdc-snackbar-container-color: #e65100;
+  --mat-snack-bar-button-color: white;
+  border-radius: 8px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+
+/* Material overrides */
+.mat-mdc-card { box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important; }
+.mat-mdc-raised-button { border-radius: 8px !important; }
+.mat-mdc-outlined-button { border-radius: 8px !important; }
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .hide-mobile { display: none !important; }
+}
